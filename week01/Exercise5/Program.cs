@@ -8,7 +8,7 @@ class Program
         string name = Program.PromptUserName();
         int number = Program.PromptUserNumber();
         int square = Program.SquareNumber(number);
-        Program.DisplayResult(square, name);
+        Program.DisplayResult(name, square);
 
     }
     static string PromptUserName()
@@ -33,7 +33,7 @@ class Program
     {
         Console.WriteLine("Welcome to the Program!");
     }
-    static void DisplayResult(int square, string name)
+    static void DisplayResult(string name, int square)
     {
         Console.WriteLine($"{name}, the square of your number is {square}");
     }
