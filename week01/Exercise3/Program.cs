@@ -40,5 +40,6 @@ class Program
             response =  Console.ReadLine();
         }
         Console.WriteLine("\nHave a nice day then!");
+        // exiting the program here
     }
 }
