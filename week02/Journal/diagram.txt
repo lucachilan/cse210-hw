@@ -1,0 +1,48 @@
+Journal 
+    - add an entry
+    - display the entries
+    - save the file
+    - load from the file
+
+    store variables: 
+    file name : string _filename
+    entry : list _entries : List<Entry>
+
+PropmtGenerator 
+    - grab different prompts 
+    - choose one
+    - give it to you
+
+    store variables:
+    _prompts : List<string>
+
+Entry 
+    - store the Entry temporally
+    - display one entry
+
+    store variables
+    _date : string or date type
+    _prompt : string
+    _entry : string
+
+
+According to the mentor guide:
+
+Journal
+    -AddEntry(newEntry:Entry) : void
+    -DisplayAll() : void //goes to the entry display
+    -SaveToFile(file:string)
+    -LoadFromFile(file:string)
+_entries : List<Entry>
+
+
+Entry
+    -Display() : void //give to the DisplayAll()
+_date : string
+_promptText : string
+_entryText : string
+
+
+PropmtGenerator
+    -GetRandomPrompts() : string
+_prompts : List<string>
