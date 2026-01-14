@@ -3,7 +3,7 @@ using System.Security.Cryptography.X509Certificates;
 
 public class Scripture
 {
-    public Reference _reference;
+    private Reference _reference;
     List<Word> _words = new List<Word>();
     int _hiddenWords;
 
@@ -32,7 +32,7 @@ public class Scripture
             {
                 randomIndex = random.Next(_words.Count());
                 Word wordToHide = _words[randomIndex];
-                if (wordToHide._isHidden == false)
+                if (wordToHide.IsHidden() == false)
                 {
                     wordToHide.Hide();
                     _hiddenWords+=1;

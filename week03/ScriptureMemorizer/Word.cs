@@ -3,8 +3,8 @@ using System.Runtime.CompilerServices;
 
 public class Word
 {
-    public string _text;
-    public bool _isHidden;
+    string _text;
+    bool _isHidden;
 
     public Word (string text)
     {
