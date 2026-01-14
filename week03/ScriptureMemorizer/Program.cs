@@ -10,12 +10,10 @@ class Program
     static int numberToHide = 10;
     static string answer = " ";
     static Scripture _selectedScripture;
-
     static void Main(string[] args)
     {
         while(answer!="quit"){
             _selectedScripture = Scripture.GetRandomScripture();
-
             while(!_selectedScripture.IsCompletelyHidden()){
                 Console.Clear();
                 Console.WriteLine(_selectedScripture.GetDisplayText());

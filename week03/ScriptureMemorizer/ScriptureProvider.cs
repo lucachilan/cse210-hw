@@ -9,12 +9,10 @@ public class ScriptureProvider()
         int verse = int.Parse(parts[2].Trim());
         int endVerse = int.Parse(parts[3].Trim());
         string text = parts[4].Trim();
-
         Reference reference = new Reference(book, chapter, verse, endVerse);
         Scripture scripture = new Scripture(reference, text);
         return scripture;
     }
-
     static string filename = "scriptures.txt";
     private string GetScriptureFromFile()
     {
@@ -22,7 +20,6 @@ public class ScriptureProvider()
         Random random = new Random();
         int rndIndex = random.Next(lines.Count());
         string wholeVerse = lines[rndIndex]; 
-    
         return wholeVerse;
     }
 }

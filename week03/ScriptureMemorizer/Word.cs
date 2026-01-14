@@ -5,13 +5,11 @@ public class Word
 {
     string _text;
     bool _isHidden;
-
     public Word (string text)
     {
         _text=text;
         _isHidden=false;
     }
-
     public void Hide()
     {
         char[] letters = _text.ToCharArray();
@@ -22,7 +20,6 @@ public class Word
         _text = new string(letters);
         _isHidden = true;
     }
-    
     public bool IsHidden()
     {
         return _isHidden;

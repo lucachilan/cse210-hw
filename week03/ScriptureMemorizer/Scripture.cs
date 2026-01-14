@@ -6,7 +6,6 @@ public class Scripture
     private Reference _reference;
     List<Word> _words = new List<Word>();
     int _hiddenWords;
-
     public Scripture (Reference Reference, string text)
     {
         _reference = Reference;
@@ -52,14 +51,12 @@ public class Scripture
     {
         return _reference;
     }
-
     public string GetDisplayText()
     {
         string displayText=_reference.GetDisplayText();
         foreach(Word word in _words)
         {
             displayText = displayText + " " + word.GetDisplayText() ;
-
         }
         return displayText;
     }
