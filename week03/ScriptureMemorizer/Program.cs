@@ -9,14 +9,12 @@ class Program
 {
     static int numberToHide = 10;
     static string answer = " ";
-
     static Scripture _selectedScripture;
 
     static void Main(string[] args)
     {
         while(answer!="quit"){
-            ScriptureProvider provider = new ScriptureProvider();
-            _selectedScripture = provider.GetRandomScripture();
+            _selectedScripture = Scripture.GetRandomScripture();
 
             while(!_selectedScripture.IsCompletelyHidden()){
                 Console.Clear();

@@ -17,7 +17,11 @@ public class Scripture
             _words.Add(scriptureWord);
         }
     }
-
+    public static Scripture GetRandomScripture()
+    {
+        ScriptureProvider provider = new ScriptureProvider();
+        return provider.GetRandomScripture();
+    }
     public void HideRandomWords(int numberToHide)
     {       
         Random random = new Random();
