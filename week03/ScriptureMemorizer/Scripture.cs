@@ -5,7 +5,6 @@ public class Scripture
 {
     public Reference _reference;
     List<Word> _words = new List<Word>();
-
     int _hiddenWords;
 
     public Scripture (Reference Reference, string text)
@@ -22,12 +21,10 @@ public class Scripture
     public void HideRandomWords(int numberToHide)
     {       
         Random random = new Random();
-        
         if (_words.Count()-_hiddenWords < numberToHide)
         {
             numberToHide = _words.Count()-_hiddenWords;
         }
-
         int randomIndex;
         if (!IsCompletelyHidden())
         { 
@@ -44,10 +41,14 @@ public class Scripture
                 {
                     i--;
                 }
-
             }
-        }       
+        }   
     }
+    public Reference GetReference()
+    {
+        return _reference;
+    }
+
     public string GetDisplayText()
     {
         string displayText=_reference.GetDisplayText();
@@ -58,7 +59,7 @@ public class Scripture
         }
         return displayText;
     }
-    private bool IsCompletelyHidden()
+    public bool IsCompletelyHidden()
     {
         if(_hiddenWords == _words.Count())
         {
