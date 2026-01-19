@@ -26,12 +26,14 @@ class Program
         string filename;
         Console.WriteLine("What is the filename for your journal? ");
         
-        filename = Console.ReadLine();
-        while (!File.Exists(filename))
-        {
-            Console.WriteLine("Cannot Find the file, try again: ");
-            filename = Console.ReadLine();
-        }    
+        // filename = Console.ReadLine();
+        // while (!File.Exists(filename))
+        // {
+        //     Console.WriteLine("Cannot Find the file, try again: ");
+        //     filename = Console.ReadLine();
+        // }    
+
+        filename = "myJournal.csv";
 
         myJournal.LoadFromFile(filename);
         saveStatus = true;
