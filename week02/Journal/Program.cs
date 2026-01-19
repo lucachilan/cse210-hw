@@ -32,6 +32,7 @@ class Program
         //     Console.WriteLine("Cannot Find the file, try again: ");
         //     filename = Console.ReadLine();
         // }    
+        
 
         filename = "myJournal.csv";
 
