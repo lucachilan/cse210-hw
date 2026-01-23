@@ -21,14 +21,14 @@ public class Video
         }
     }
 
-    public int getNumberOfComments()
+    public int GetNumberOfComments()
     {
         return _comments.Count;
     }
 
     public void DisplayVideoInfo()
     {
-        Console.WriteLine($"Video: {_title} by: '{_author}', duration: {_length}, has {getNumberOfComments()} comment(s).");
+        Console.WriteLine($"Video: {_title} by: '{_author}', duration: {_length}, has {GetNumberOfComments()} comment(s).");
         foreach(Comment comment in _comments)
         {
             Console.WriteLine(comment.GetCommentText());
