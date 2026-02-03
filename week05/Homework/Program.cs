@@ -4,6 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Homework Project.");
+        MathAssigment math = new MathAssigment("Luca", "Calculus", "2", "20-39,50-62");
+        Console.WriteLine(math.GetHomeworkList());
+        WritingAssigment writ = new WritingAssigment("Lola", "Poetry", "The daisy flower");
+        Console.WriteLine(writ.GetWritingInformation());
     }
 }
