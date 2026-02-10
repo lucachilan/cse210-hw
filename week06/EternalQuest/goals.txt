@@ -1,0 +1,5 @@
+50
+SimpleGoal|awfawwag|aaaa|50|True
+ChecklistGoal|check|this|50|0|3|150
+EternalGoal|asfawfa|asfaw|50
+SimpleGoal|aaaa|afdafwgaga|67|False
